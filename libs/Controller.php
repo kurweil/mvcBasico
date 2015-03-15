@@ -8,7 +8,7 @@ class Controller
         Session::init();
         // Vamos a tener una vista
         $this->view = new View();
-        //$this->loadModel();
+        $this->loadModel();
     }
 
     function loadModel()
