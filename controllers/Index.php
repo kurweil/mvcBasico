@@ -10,7 +10,13 @@ class Index extends Controller
 
     function index()
     {
-        echo 'Index/index';
+       // echo 'Index/index';
+        $this->view->render($this, 'index');
+    }
+
+    function killItWithFire()
+    {
+        Session::destroy();
     }
 
 }
